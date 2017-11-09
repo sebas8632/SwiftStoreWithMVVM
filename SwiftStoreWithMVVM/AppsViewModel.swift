@@ -51,16 +51,47 @@ class AppsViewModel : NSObject {
     /**
      Function to convert the imageUrl to UIImage.
      */
-    func appImageToDisplay (for indexPath: IndexPath) -> UIImage {
+    func appImageToDisplay (for indexPath: IndexPath) -> URL {
         let arrayImages = apps?[indexPath.row].value(forKeyPath: "im:image") as? [NSDictionary]
         
         let stringImage = arrayImages?[2].value(forKeyPath: "label") as? String ?? ""
         
-        let url = URL(string:stringImage)
-        let data = try? Data(contentsOf: url!)
-        let image: UIImage = UIImage(data: data!)!
+        let urlImage : URL = URL(string: stringImage)!
         
-        return image
+        
+//        let session = URLSession(configuration: .default)
+//        
+//        var imageData : Data?
+//        
+//        let downloadPicTask = session.dataTask(with: urlImage!) { (data, response, error) in
+//            
+//            if let e = error {
+//                print(e)
+//            } else {
+//                
+//                if let res = response as? HTTPURLResponse {
+//                    
+//                    if let imageDataFromURL = data {
+//                        
+//                        print("Se descargo bien")
+//
+//                        DispatchQueue.main.async {
+//                            imageData = imageDataFromURL
+//                        }
+////                        DispatchQueue.main.async {
+////                            
+////                            imageToShow = image
+////                        }
+//                }
+//            }
+//        }
+        
+//        
+   //     }
+        
+  //      downloadPicTask.resume()
+
+        return urlImage
     }
     
     /**

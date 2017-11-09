@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		14340BC9D61AF44215590FE6 /* Pods_SwiftStoreWithMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4686F0E25D2A480191E621 /* Pods_SwiftStoreWithMVVM.framework */; };
 		9E3C0B511FB0D50D008963BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3C0B501FB0D50D008963BD /* AppDelegate.swift */; };
-		9E3C0B531FB0D50D008963BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3C0B521FB0D50D008963BD /* ViewController.swift */; };
+		9E3C0B531FB0D50D008963BD /* AppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3C0B521FB0D50D008963BD /* AppsViewController.swift */; };
 		9E3C0B561FB0D50D008963BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E3C0B541FB0D50D008963BD /* Main.storyboard */; };
 		9E3C0B581FB0D50D008963BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E3C0B571FB0D50D008963BD /* Assets.xcassets */; };
 		9E3C0B5B1FB0D50D008963BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E3C0B591FB0D50D008963BD /* LaunchScreen.storyboard */; };
 		9E3C0B641FB0D639008963BD /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3C0B631FB0D639008963BD /* ApiClient.swift */; };
 		9E3C0B671FB0FD7D008963BD /* AppsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3C0B661FB0FD7D008963BD /* AppsViewModel.swift */; };
+		9EF2F4C51FB4064C003C9DF0 /* AppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF2F4C41FB4064C003C9DF0 /* AppCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,13 +24,14 @@
 		8B4686F0E25D2A480191E621 /* Pods_SwiftStoreWithMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftStoreWithMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E3C0B4D1FB0D50D008963BD /* SwiftStoreWithMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStoreWithMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E3C0B501FB0D50D008963BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9E3C0B521FB0D50D008963BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9E3C0B521FB0D50D008963BD /* AppsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsViewController.swift; sourceTree = "<group>"; };
 		9E3C0B551FB0D50D008963BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9E3C0B571FB0D50D008963BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E3C0B5A1FB0D50D008963BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E3C0B5C1FB0D50D008963BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E3C0B631FB0D639008963BD /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		9E3C0B661FB0FD7D008963BD /* AppsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppsViewModel.swift; sourceTree = "<group>"; };
+		9EF2F4C41FB4064C003C9DF0 /* AppCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,11 +78,12 @@
 				9E3C0B651FB0FD4A008963BD /* ViewModel */,
 				9E3C0B621FB0D621008963BD /* ApiCall */,
 				9E3C0B501FB0D50D008963BD /* AppDelegate.swift */,
-				9E3C0B521FB0D50D008963BD /* ViewController.swift */,
+				9E3C0B521FB0D50D008963BD /* AppsViewController.swift */,
 				9E3C0B541FB0D50D008963BD /* Main.storyboard */,
 				9E3C0B571FB0D50D008963BD /* Assets.xcassets */,
 				9E3C0B591FB0D50D008963BD /* LaunchScreen.storyboard */,
 				9E3C0B5C1FB0D50D008963BD /* Info.plist */,
+				9EF2F4C41FB4064C003C9DF0 /* AppCell.swift */,
 			);
 			path = SwiftStoreWithMVVM;
 			sourceTree = "<group>";
@@ -234,7 +237,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E3C0B531FB0D50D008963BD /* ViewController.swift in Sources */,
+				9EF2F4C51FB4064C003C9DF0 /* AppCell.swift in Sources */,
+				9E3C0B531FB0D50D008963BD /* AppsViewController.swift in Sources */,
 				9E3C0B511FB0D50D008963BD /* AppDelegate.swift in Sources */,
 				9E3C0B671FB0FD7D008963BD /* AppsViewModel.swift in Sources */,
 				9E3C0B641FB0D639008963BD /* ApiClient.swift in Sources */,
